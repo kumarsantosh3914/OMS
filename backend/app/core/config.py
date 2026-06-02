@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     POSTGRES_DB: str = "oms_db"
 
     # CORS
-    ALLOWED_ORIGINS: List[str] = ["http://localhost:3000", "http://localhost:8080"]
+    ALLOWED_ORIGINS: List[str] = ["http://localhost:3000", "https://santosh-oms.netlify.app"]
 
     @field_validator("ALLOWED_ORIGINS", mode="before")
     @classmethod
